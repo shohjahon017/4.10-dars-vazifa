@@ -118,3 +118,111 @@
 //   return sum;
 // }
 // console.log(sumElements(arr));
+
+//4-masala
+// let arr = [1, 2, 3, 6, 9];
+// function twoEqual(arg) {
+//   let res = arg.map((element) => {
+//     return element * 2;
+//   });
+//   return res;
+// }
+// console.log(twoEqual(arr));
+
+//5-masala
+// let arr = [2, 3, -6, 9, 5, -8, -1];
+// function removeNegative(arg) {
+//   let res = arg.filter((element) => {
+//     return element > 0;
+//   });
+//   return res;
+// }
+// console.log(removeNegative(arr));
+
+//6-masala
+// let arr = [1, 3, 6, 3, 6, 8, 5, 7];
+// function uniqueElement(arg) {
+//   let unique = [];
+//   for (const element of arg) {
+//     if (arg.indexOf(element) === arg.lastIndexOf(element)) {
+//       unique.push(element);
+//     }
+//   }
+//   return unique;
+// }
+// console.log(uniqueElement(arr));
+
+//7-masala
+// let arr1 = [1, 2, 3, 6, 9];
+// let arr2 = [9, 3, 6, 7, 8];
+// function concatElement(arg1, arg2) {
+//   let res = arg1.concat(arg2);
+//   return res;
+// }
+// console.log(concatElement(arr1, arr2));
+
+//8-masala
+// let arr = [1, 2, 6, 8, 9];
+// function reverseArray(arg) {
+//   arg.reverse(function (a, b) {
+//     return a - b;
+//   });
+//   return arg;
+// }
+// console.log(reverseArray(arr));
+
+//9-masala
+// let arr = [9, 5, 7, 8, 2, 3];
+// function oddIndexElement(arg) {
+//   let res = arg.filter(function (value, index) {
+//     return index % 2 == 1;
+//   });
+//   return res;
+// }
+// console.log(oddIndexElement(arr));
+
+//10-masala
+// let arr = [22, 85, 2, 3, 6, 8, 10, 90];
+// function averageElement(arg) {
+//   if (arg.length === 0) {
+//     return 0;
+//   }
+
+//   let sum = 0;
+//   for (let i = 0; i < arg.length; i++) {
+//     sum += arg[i];
+//   }
+
+//   return sum / arg.length;
+// }
+// console.log(averageElement(arr));
+
+//Obyekt va Massivlarga oid masalalar
+//1-masala
+// const people = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 30 },
+//   { name: "Hasan", age: 28 },
+// ];
+// function getOldestPersonName(people) {
+//   let oldMen = people[0];
+//   for (let i = 0; i < people.length; i++) {
+//     if (people[i].age > oldMen.age) {
+//       oldMen = people[i];
+//     }
+//   }
+//   return oldMen.name;
+// }
+// console.log(getOldestPersonName(people));
+
+//2-masala
+const people = [
+  { name: "Ali", age: 25 },
+  { name: "Vali", age: 30 },
+  { name: "Hasan", age: 28 },
+];
+function getPeopleOlderThanAge(people, age) {
+  let olderPeople = people.filter((element) => element.age > age);
+  return olderPeople;
+}
+console.log(getPeopleOlderThanAge(people, 27));
