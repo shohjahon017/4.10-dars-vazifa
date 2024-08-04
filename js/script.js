@@ -216,13 +216,100 @@
 // console.log(getOldestPersonName(people));
 
 //2-masala
-const people = [
-  { name: "Ali", age: 25 },
-  { name: "Vali", age: 30 },
-  { name: "Hasan", age: 28 },
-];
-function getPeopleOlderThanAge(people, age) {
-  let olderPeople = people.filter((element) => element.age > age);
-  return olderPeople;
-}
-console.log(getPeopleOlderThanAge(people, 27));
+// const people = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 30 },
+//   { name: "Hasan", age: 28 },
+// ];
+// function getPeopleOlderThanAge(people, age) {
+//   let olderPeople = people.filter((element) => element.age > age);
+//   return olderPeople;
+// }
+// console.log(getPeopleOlderThanAge(people, 27));
+
+//3-masala
+// const people = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 30 },
+//   { name: "Hasan", age: 28 },
+// ];
+// function getNames(people) {
+//   let res = people.map((element) => {
+//     return element.name;
+//   });
+//   return res.join(" ");
+// }
+// console.log(getNames(people));
+
+//4-masala
+// const people = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 30 },
+//   { name: "Hasan", age: 28 },
+// ];
+// function getTotalAge(people) {
+//   let sum = 0;
+//   people.forEach((element) => {
+//     sum += element.age;
+//   });
+//   return sum;
+// }
+// console.log(getTotalAge(people));
+
+//5-masala
+// const people = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 30 },
+//   { name: "Hasan", age: 28 },
+// ];
+// function getPersonByName(people) {
+//   let res = people.filter((element) => {
+//     return element.name;
+//   });
+//   return res;
+// }
+// console.log(getPersonByName(people));
+
+//6-masala
+// const people = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 30 },
+//   { name: "Hasan", age: 28 },
+// ];
+// function getAverageAge(people) {
+//   let Age = 0;
+//   for (const element of people) {
+//     Age += element.age;
+//   }
+//   return Age / people.age;
+// }
+// console.log(getAverageAge(people));
+
+//7-masala
+// const people = [
+//   { name: "Ali", age: 25, gender: "male" },
+//   { name: "Vali", age: 30, gender: "male" },
+//   { name: "Hasan", age: 28, gender: "male" },
+//   { name: "Salima", age: 22, gender: "female" },
+// ];
+// function getFemales(people) {
+//   let res = people.filter((element) => {
+//     return element.gender == "female";
+//   });
+//   return res;
+// }
+// console.log(getFemales(people));
+
+//8-masala
+// const people = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 30 },
+//   { name: "Hasan", age: 28 },
+// ];
+// function incrementAges(people) {
+//   let res = people.map((element) => {
+//     return element.age + 1;
+//   });
+//   return res;
+// }
+// console.log(incrementAges(people));
